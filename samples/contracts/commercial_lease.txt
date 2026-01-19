@@ -1,0 +1,202 @@
+COMMERCIAL LEASE AGREEMENT
+
+This Commercial Lease Agreement (the "Lease") is entered into as of March 1, 2026 (the "Commencement Date"), by and between:
+
+LANDLORD:
+Property Holdings LLC
+123 Real Estate Boulevard
+San Francisco, CA 94103
+
+TENANT:
+StartupCo Inc.
+789 Startup Lane, Suite 200
+San Francisco, CA 94102
+
+PREMISES: 1500 Market Street, Suite 400, San Francisco, CA 94102
+Approximately 2,500 square feet of office space (the "Premises")
+
+NOW, THEREFORE, in consideration of the mutual covenants and agreements contained herein, the parties agree as follows:
+
+1. TERM
+
+1.1 Initial Term
+The initial term of this Lease shall be three (3) years, commencing on March 1, 2026 and ending on February 28, 2029 (the "Initial Term").
+
+1.2 Renewal Option
+Tenant shall have the option to renew this Lease for two (2) additional one-year terms, provided Tenant is not in default and provides written notice to Landlord at least one hundred eighty (180) days prior to the expiration of the then-current term. Rent for renewal terms shall increase by seven percent (7%) per year.
+
+2. RENT
+
+2.1 Base Rent
+Tenant shall pay monthly base rent as follows:
+- Months 1-12: $7,500 per month ($3.00 per square foot)
+- Months 13-24: $7,875 per month ($3.15 per square foot)
+- Months 25-36: $8,269 per month ($3.31 per square foot)
+
+Base Rent shall be payable in advance on the first day of each month. Late payments shall incur a late fee of $250 plus interest at 1.5% per month.
+
+2.2 Security Deposit
+Tenant shall pay a security deposit of $15,000 upon execution of this Lease. The security deposit shall be held by Landlord and may be used to cover unpaid rent, damages, or cleaning costs. The deposit is non-interest bearing.
+
+2.3 Additional Rent
+In addition to Base Rent, Tenant shall pay:
+
+a) Common Area Maintenance (CAM): Tenant's proportionate share (estimated $1.25/sq ft/month = $3,125/month)
+
+b) Property Taxes: Tenant's proportionate share of annual property tax increases above the base year (estimated $500/month)
+
+c) Insurance: Tenant's proportionate share of building insurance premiums (estimated $300/month)
+
+d) Utilities: Tenant responsible for 100% of electricity, gas, water, sewer, and internet for the Premises (estimated $800/month)
+
+Total estimated monthly payment: $7,500 (base) + $3,125 (CAM) + $500 (tax) + $300 (insurance) + $800 (utilities) = $12,225
+
+2.4 CAM Reconciliation
+Landlord shall provide an annual reconciliation of actual CAM costs. If actual costs exceed estimated payments, Tenant shall pay the difference within 30 days. If actual costs are less than estimated, Landlord may retain the difference or credit it toward future payments at Landlord's discretion.
+
+3. USE OF PREMISES
+
+3.1 Permitted Use
+The Premises shall be used solely for general office purposes. No retail, manufacturing, or residential use is permitted.
+
+3.2 Compliance with Laws
+Tenant shall comply with all federal, state, and local laws, ordinances, and regulations related to Tenant's use of the Premises. Tenant shall be responsible for all costs of compliance, including any necessary modifications to the Premises.
+
+4. MAINTENANCE AND REPAIRS
+
+4.1 Tenant Obligations
+Tenant shall maintain the Premises in good condition and shall be responsible for:
+- Interior painting and wall repairs
+- Carpet cleaning and replacement
+- HVAC filters and routine maintenance
+- Plumbing fixtures (sinks, toilets, etc.)
+- Light fixtures and bulbs
+- Pest control
+- Window cleaning
+- All damage caused by Tenant's employees, contractors, or guests
+
+4.2 Landlord Obligations
+Landlord shall maintain the building structure, roof, exterior walls, foundation, and common areas. Landlord shall also be responsible for major HVAC system repairs (over $1,000), provided Tenant has maintained HVAC filters and routine maintenance.
+
+5. ALTERATIONS AND IMPROVEMENTS
+
+5.1 Landlord Approval Required
+Tenant shall not make any alterations, improvements, or additions to the Premises without Landlord's prior written consent, which may be withheld in Landlord's sole discretion.
+
+5.2 Ownership of Improvements
+All improvements, alterations, and fixtures installed by Tenant shall become Landlord's property upon installation and shall remain in the Premises upon termination of this Lease, except for Tenant's trade fixtures and equipment.
+
+5.3 Removal of Property
+Upon termination, Tenant may remove its movable furniture, equipment, and trade fixtures, but must repair any damage caused by such removal. Landlord may require Tenant to remove certain improvements and restore the Premises to its original condition.
+
+6. INSURANCE AND LIABILITY
+
+6.1 Tenant's Insurance
+Tenant shall maintain the following insurance at Tenant's expense:
+
+a) Commercial General Liability: Minimum $2,000,000 per occurrence and $4,000,000 aggregate
+
+b) Property Insurance: Covering all of Tenant's personal property, improvements, and fixtures at replacement cost
+
+c) Workers' Compensation: As required by law
+
+Landlord shall be named as additional insured on all policies.
+
+6.2 Landlord Not Liable
+LANDLORD SHALL NOT BE LIABLE FOR ANY INJURY, LOSS, OR DAMAGE TO PERSONS OR PROPERTY OCCURRING ON THE PREMISES OR IN COMMON AREAS, INCLUDING BUT NOT LIMITED TO:
+- Theft or vandalism
+- Water damage from leaks, floods, or burst pipes
+- Fire or smoke damage
+- Injuries to Tenant's employees or guests
+- Damage to Tenant's property
+
+TENANT WAIVES ALL CLAIMS AGAINST LANDLORD FOR SUCH DAMAGES.
+
+7. DEFAULT AND REMEDIES
+
+7.1 Tenant Default
+Tenant shall be in default if:
+a) Tenant fails to pay rent within five (5) days of due date;
+b) Tenant breaches any other term of this Lease and fails to cure within thirty (30) days of written notice;
+c) Tenant becomes insolvent, files for bankruptcy, or makes an assignment for the benefit of creditors;
+d) Tenant abandons the Premises.
+
+7.2 Landlord's Remedies
+Upon Tenant's default, Landlord may:
+a) Terminate this Lease immediately;
+b) Re-enter and take possession of the Premises;
+c) Hold Tenant liable for all unpaid rent through the end of the term;
+d) Pursue any other remedy available at law or in equity.
+
+Tenant shall remain liable for all costs incurred by Landlord in connection with Tenant's default, including attorney's fees, re-letting costs, and lost rent.
+
+7.3 No Cure Period for Non-Payment
+If Tenant fails to pay rent, Landlord may terminate this Lease and evict Tenant without providing any cure period. Tenant waives any statutory notice requirements.
+
+8. ASSIGNMENT AND SUBLETTING
+
+8.1 Landlord Consent Required
+Tenant shall not assign this Lease or sublet all or any portion of the Premises without Landlord's prior written consent, which may be withheld in Landlord's sole and absolute discretion.
+
+8.2 Recapture Right
+If Tenant requests to assign or sublet more than 50% of the Premises, Landlord may terminate this Lease and recapture the Premises instead of approving the assignment or sublease.
+
+8.3 Profit Sharing
+If Landlord consents to an assignment or sublease, Tenant shall pay Landlord 100% of any rent received from the assignee or subtenant that exceeds the rent payable under this Lease.
+
+9. TERMINATION
+
+9.1 Landlord Termination Right
+Landlord may terminate this Lease at any time upon sixty (60) days' written notice if:
+a) Landlord wishes to demolish or substantially renovate the building;
+b) Landlord receives an offer to lease the Premises at a higher rent;
+c) Landlord decides to occupy the Premises for its own use;
+d) For any other reason or no reason at Landlord's sole discretion.
+
+Upon such termination, Tenant shall vacate the Premises and shall not be entitled to any compensation or damages.
+
+9.2 Tenant Termination
+Tenant may not terminate this Lease prior to the expiration of the Initial Term except in the event of Landlord's uncured material breach. Early termination for any other reason shall constitute default.
+
+10. HOLDOVER
+
+If Tenant remains in possession after the expiration or termination of this Lease without Landlord's written consent, Tenant shall pay rent at 200% of the last monthly rent, plus all damages incurred by Landlord due to Tenant's holdover.
+
+11. DISPUTE RESOLUTION
+
+11.1 Arbitration
+Any dispute arising from this Lease shall be resolved through binding arbitration in San Francisco, California, administered by JAMS under California law. Each party shall bear its own costs and attorney's fees.
+
+11.2 No Jury Trial
+BOTH PARTIES WAIVE THEIR RIGHT TO A JURY TRIAL FOR ANY DISPUTE ARISING FROM THIS LEASE.
+
+12. GENERAL PROVISIONS
+
+12.1 Entire Agreement
+This Lease constitutes the entire agreement between the parties and supersedes all prior negotiations and agreements.
+
+12.2 Amendments
+This Lease may be amended only by a written instrument signed by both parties.
+
+12.3 Governing Law
+This Lease shall be governed by California law.
+
+12.4 Attorney's Fees
+In any action arising from this Lease, the prevailing party shall be entitled to recover reasonable attorney's fees and costs from the non-prevailing party.
+
+IN WITNESS WHEREOF, the parties have executed this Lease as of the date first written above.
+
+LANDLORD: Property Holdings LLC
+
+By: _________________________
+Name: Robert Williams
+Title: Managing Member
+Date: _________________________
+
+
+TENANT: StartupCo Inc.
+
+By: _________________________
+Name: Michael Chen
+Title: Chief Executive Officer
+Date: _________________________

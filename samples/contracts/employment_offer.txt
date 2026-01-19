@@ -1,0 +1,65 @@
+EMPLOYMENT OFFER LETTER
+
+Date: February 1, 2026
+
+John Smith
+123 Main Street
+San Francisco, CA 94102
+
+Dear John,
+
+We are pleased to offer you the position of Senior Software Engineer at TechStart Inc., reporting to the VP of Engineering.
+
+COMPENSATION AND BENEFITS
+
+Base Salary: $150,000 per year, paid semi-monthly
+
+Stock Options: 10,000 shares of Common Stock with a 4-year vesting schedule (25% after year 1, then monthly vesting)
+
+Benefits:
+- Health, dental, and vision insurance (company covers 80% of premiums)
+- 401(k) retirement plan with 3% company match
+- 15 days PTO (vacation + sick leave combined)
+- Standard company holidays
+
+Start Date: March 1, 2026
+
+EMPLOYMENT TERMS
+
+1. At-Will Employment
+This is an at-will employment arrangement. Either party may terminate employment at any time, with or without cause, and with or without notice.
+
+2. Intellectual Property
+All inventions, discoveries, and works of authorship conceived or made by Employee during employment, whether or not during working hours, using Company equipment or otherwise, shall be the sole and exclusive property of Company. Employee agrees to assign all rights in such works to Company.
+
+3. Non-Compete and Non-Solicitation
+Employee agrees not to engage in competing business activities or solicit Company clients or employees for twelve (12) months following termination of employment, to the extent permitted by law. This restriction applies within the United States.
+
+4. Confidentiality
+Employee shall maintain confidentiality of all proprietary information, trade secrets, customer lists, and business strategies indefinitely, both during and after employment.
+
+5. Arbitration
+Any dispute arising from this agreement shall be resolved through binding arbitration administered by JAMS in San Francisco, California, under California law. Each party shall bear their own costs.
+
+6. Work Product
+All code, designs, documentation, and other work product created by Employee shall be considered "work made for hire" under U.S. copyright law and shall be Company property.
+
+ACCEPTANCE
+
+Please sign and return this letter by February 15, 2026 to accept this offer. This offer will expire if not accepted by that date.
+
+We look forward to having you join our team!
+
+Sincerely,
+
+Jane Doe
+VP of Engineering
+TechStart Inc.
+
+---
+
+ACKNOWLEDGMENT OF ACCEPTANCE
+
+I, John Smith, accept the above employment offer and agree to the terms and conditions stated herein.
+
+Signature: _________________________  Date: _________________________

@@ -22,12 +22,22 @@ import { BlockKind } from '@/components/block';
 // use the Drizzle adapter for Auth.js / NextAuth
 // https://authjs.dev/reference/adapter/drizzle
 
-// biome-ignore lint: Forbidden non-null assertion.
-const client = postgres(process.env.POSTGRES_URL!);
-const db = drizzle(client);
+// Lazy-initialize the database to avoid build-time connections.
+let _db: ReturnType<typeof drizzle> | null = null;
+function getDb() {
+  if (_db) return _db;
+  const url = process.env.POSTGRES_URL;
+  if (!url) {
+    throw new Error('POSTGRES_URL is not defined');
+  }
+  const client = postgres(url, { max: 3 });
+  _db = drizzle(client);
+  return _db;
+}
 
 export async function getUser(email: string): Promise<Array<User>> {
   try {
+    const db = getDb();
     return await db.select().from(user).where(eq(user.email, email));
   } catch (error) {
     console.error('Failed to get user from database');
@@ -40,6 +50,7 @@ export async function createUser(email: string, password: string) {
   const hash = hashSync(password, salt);
 
   try {
+    const db = getDb();
     return await db.insert(user).values({ email, password: hash });
   } catch (error) {
     console.error('Failed to create user in database');
@@ -57,6 +68,7 @@ export async function saveChat({
   title: string;
 }) {
   try {
+    const db = getDb();
     return await db.insert(chat).values({
       id,
       createdAt: new Date(),
@@ -71,6 +83,7 @@ export async function saveChat({
 
 export async function deleteChatById({ id }: { id: string }) {
   try {
+    const db = getDb();
     await db.delete(vote).where(eq(vote.chatId, id));
     await db.delete(message).where(eq(message.chatId, id));
 
@@ -83,6 +96,7 @@ export async function deleteChatById({ id }: { id: string }) {
 
 export async function getChatsByUserId({ id }: { id: string }) {
   try {
+    const db = getDb();
     return await db
       .select()
       .from(chat)
@@ -96,6 +110,7 @@ export async function getChatsByUserId({ id }: { id: string }) {
 
 export async function getChatById({ id }: { id: string }) {
   try {
+    const db = getDb();
     const [selectedChat] = await db.select().from(chat).where(eq(chat.id, id));
     return selectedChat;
   } catch (error) {
@@ -106,6 +121,7 @@ export async function getChatById({ id }: { id: string }) {
 
 export async function saveMessages({ messages }: { messages: Array<Message> }) {
   try {
+    const db = getDb();
     return await db.insert(message).values(messages);
   } catch (error) {
     console.error('Failed to save messages in database', error);
@@ -115,6 +131,7 @@ export async function saveMessages({ messages }: { messages: Array<Message> }) {
 
 export async function getMessagesByChatId({ id }: { id: string }) {
   try {
+    const db = getDb();
     return await db
       .select()
       .from(message)
@@ -136,6 +153,7 @@ export async function voteMessage({
   type: 'up' | 'down';
 }) {
   try {
+    const db = getDb();
     const [existingVote] = await db
       .select()
       .from(vote)
@@ -160,6 +178,7 @@ export async function voteMessage({
 
 export async function getVotesByChatId({ id }: { id: string }) {
   try {
+    const db = getDb();
     return await db.select().from(vote).where(eq(vote.chatId, id));
   } catch (error) {
     console.error('Failed to get votes by chat id from database', error);
@@ -181,6 +200,7 @@ export async function saveDocument({
   userId: string;
 }) {
   try {
+    const db = getDb();
     return await db.insert(document).values({
       id,
       title,
@@ -197,6 +217,7 @@ export async function saveDocument({
 
 export async function getDocumentsById({ id }: { id: string }) {
   try {
+    const db = getDb();
     const documents = await db
       .select()
       .from(document)

@@ -8,21 +8,35 @@ This README is a slow-scrolling walkthrough so viewers can understand the produc
 
 ## Quick Demo (Screenshots)
 
-<p align="center">
-	<img src="app/docs/showcase1.png" alt="Home - Analyze Contract" width="900" />
-	<br />
-	<em>Home: Select type/persona/model, paste/upload contract, and Analyze.</em>
-</p>
-<p align="center">
-	<img src="app/docs/showcase2.png" alt="Pipeline - Model Run & Steps" width="900" />
-	<br />
-	<em>Pipeline: 8 steps with Model Run metrics (tokens, latency, cost, retries).</em>
-</p>
-<p align="center">
-	<img src="app/docs/showcase3.png" alt="Analysis Results - Dashboard" width="900" />
-	<br />
-	<em>Results: Evidence-backed findings, clause table, and Export Report.</em>
-</p>
+<table align="center">
+	<tr>
+		<td align="center">
+			<img src="app/docs/showcase1.png" alt="Home - Analyze Contract" width="430" /><br/>
+			<em>Home: choose type/persona/model and analyze.</em>
+		</td>
+		<td align="center">
+			<img src="app/docs/showcase2.png" alt="Pipeline - Model Run & Steps" width="430" /><br/>
+			<em>Pipeline with tokens, latency, cost, retries.</em>
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			<img src="app/docs/showcase3.png" alt="Analysis Results - Dashboard" width="430" /><br/>
+			<em>Results dashboard with evidence and clause table.</em>
+		</td>
+		<td align="center">
+			<img src="app/docs/showcase4.png" alt="Diff View - Suggested Redlines" width="430" /><br/>
+			<em>Diff view with suggested redlines.</em>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" colspan="2">
+			<img src="app/docs/showcase5.png" alt="Metrics & Export" width="860" /><br/>
+			<em>Metrics & Export: model, tokens, latency, retries, PDF.</em>
+		</td>
+	</tr>
+  
+</table>
 
 <p align="center">
 	<img src="app/docs/showcase4.png" alt="Diff View - Suggested Redlines" width="900" />
@@ -184,33 +198,34 @@ The chatbot can be extended to support use cases such as customer support, inter
 These screenshots highlight the core experience:
 
 
-<p align="center">
-	<img src="app/docs/showcase1.png" alt="Home - Analyze Contract" width="800" />
-	<br />
-	<em>Home: Select type/persona/model, paste/upload contract, and Analyze.</em>
-</p>
-<p align="center">
-	<img src="app/docs/showcase2.png" alt="Pipeline - Model Run & Steps" width="800" />
-	<br />
-	<em>Pipeline: 8 steps with Model Run metrics (tokens, latency, cost, retries).</em>
-</p>
-<p align="center">
-	<img src="app/docs/showcase3.png" alt="Analysis Results - Dashboard" width="800" />
-	<br />
-	<em>Results: Evidence-backed findings, clause table, and Export Report.</em>
-</p>
-
-<p align="center">
-	<img src="app/docs/showcase4.png" alt="Diff View - Suggested Redlines" width="800" />
-	<br />
-	<em>Diff View: Suggested redlines side-by-side with the original clause.</em>
-</p>
-
-<p align="center">
-	<img src="app/docs/showcase5.png" alt="Metrics & Export" width="800" />
-	<br />
-	<em>Metrics & Export: Model, tokens, latency, retries, and PDF export.</em>
-</p>
+<table align="center">
+	<tr>
+		<td align="center">
+			<img src="app/docs/showcase1.png" alt="Home - Analyze Contract" width="380" /><br/>
+			<em>Home</em>
+		</td>
+		<td align="center">
+			<img src="app/docs/showcase2.png" alt="Pipeline - Model Run & Steps" width="380" /><br/>
+			<em>Pipeline</em>
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			<img src="app/docs/showcase3.png" alt="Analysis Results - Dashboard" width="380" /><br/>
+			<em>Results</em>
+		</td>
+		<td align="center">
+			<img src="app/docs/showcase4.png" alt="Diff View - Suggested Redlines" width="380" /><br/>
+			<em>Diff View</em>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" colspan="2">
+			<img src="app/docs/showcase5.png" alt="Metrics & Export" width="770" /><br/>
+			<em>Metrics & Export</em>
+		</td>
+	</tr>
+</table>
 
 Notes:
 - Images live at `app/docs/showcase1.png` … `app/docs/showcase5.png` in this repo for GitHub rendering.

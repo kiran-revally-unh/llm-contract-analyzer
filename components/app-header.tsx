@@ -2,7 +2,7 @@
 
 import { useTheme } from 'next-themes';
 import { Shield, User, Moon, Sun, Lock } from 'lucide-react';
-import Link from 'next/link';
+// Avoid duplicate symbol issues with next/link in this module
 import { useEffect, useState } from 'react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
@@ -25,7 +25,7 @@ export function AppHeader() {
   return (
     <header className="sticky top-0 z-20 bg-white/95 backdrop-blur-xl border-b border-gray-200">
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+        <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
           <div className="size-8 rounded-lg bg-black grid place-items-center">
             <svg className="size-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 3C10.5 3 9 3.5 8 4.5C7 3.5 5.5 3 4 3C3 3 2 3.5 2 5C2 6 2.5 7 3.5 8C3 9 3 10 3 11C3 14.5 5 17 8 18.5V21H10V18.5C10.5 18.7 11 18.8 11.5 18.9V21H12.5V18.9C13 18.8 13.5 18.7 14 18.5V21H16V18.5C19 17 21 14.5 21 11C21 10 21 9 20.5 8C21.5 7 22 6 22 5C22 3.5 21 3 20 3C18.5 3 17 3.5 16 4.5C15 3.5 13.5 3 12 3Z" fill="#FBBF24"/>
@@ -35,13 +35,13 @@ export function AppHeader() {
             </svg>
           </div>
           <span className="font-bold text-lg">Coco</span>
-        </Link>
+        </a>
         <div className="flex items-center gap-4">
-          <Link href="/docs" className="hover:opacity-80 transition-opacity">
+          <a href="/docs" className="hover:opacity-80 transition-opacity">
             <div className="inline-flex items-center h-8 px-3 rounded-md border border-gray-200 bg-white text-sm">
               Docs
             </div>
-          </Link>
+          </a>
           <div className="flex items-center gap-2 px-3 py-1.5 rounded-md border border-gray-200 bg-white text-sm font-medium">
             <Select value={preferredModel} onValueChange={updateModel}>
               <SelectTrigger className="h-7 w-[120px] text-sm border-none shadow-none px-0">

@@ -22,22 +22,6 @@ This README is a slow-scrolling walkthrough so viewers can understand the produc
 		</td>
 	
 	</tr>
-	<tr>
-			<td align="center">
-			<img src="app/docs/showcase2.png" alt="Pipeline - Model Run & Steps" width="430" /><br/>
-			<em>Pipeline with tokens, latency, cost, retries.</em>
-		</td>
-		<td align="center">
-			<img src="app/docs/showcase4.png" alt="Diff View - Suggested Redlines" width="430" /><br/>
-			<em>Diff view with suggested redlines.</em>
-		</td>
-	</tr>
-	<tr>
-		<td align="center" colspan="2">
-			<img src="app/docs/showcase5.png" alt="Metrics & Export" width="860" /><br/>
-			<em>Metrics & Export: model, tokens, latency, retries, PDF.</em>
-		</td>
-	</tr>
   
 </table>
 

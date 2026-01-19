@@ -12,19 +12,20 @@ This README is a slow-scrolling walkthrough so viewers can understand the produc
 
 <table align="center">
 	<tr>
-		<td align="center">
+			<td align="center">
+			<img src="app/docs/showcase3.png" alt="Analysis Results - Dashboard" width="430" /><br/>
+			<em>Results dashboard with evidence and clause table.</em>
+		</td>
+	<td align="center">
 			<img src="app/docs/showcase1.png" alt="Home - Analyze Contract" width="430" /><br/>
 			<em>Home: choose type/persona/model and analyze.</em>
 		</td>
-		<td align="center">
-			<img src="app/docs/showcase2.png" alt="Pipeline - Model Run & Steps" width="430" /><br/>
-			<em>Pipeline with tokens, latency, cost, retries.</em>
-		</td>
+	
 	</tr>
 	<tr>
-		<td align="center">
-			<img src="app/docs/showcase3.png" alt="Analysis Results - Dashboard" width="430" /><br/>
-			<em>Results dashboard with evidence and clause table.</em>
+			<td align="center">
+			<img src="app/docs/showcase2.png" alt="Pipeline - Model Run & Steps" width="430" /><br/>
+			<em>Pipeline with tokens, latency, cost, retries.</em>
 		</td>
 		<td align="center">
 			<img src="app/docs/showcase4.png" alt="Diff View - Suggested Redlines" width="430" /><br/>

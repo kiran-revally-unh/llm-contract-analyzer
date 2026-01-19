@@ -1,4 +1,129 @@
-# AI Chatbot
+# Coco – Contract Risk Analyzer
+
+> Turning messy contract text → structured risk report using an LLM + validation + retries + metrics.
+
+This README is a slow-scrolling walkthrough so viewers can understand the product and engineering approach in 2–3 minutes.
+
+---
+
+## Quick Demo (Screenshots)
+
+<p align="center">
+	<img src="app/docs/showcase1.png" alt="Home - Analyze Contract" width="900" />
+	<br />
+	<em>Home: Select type/persona/model, paste/upload contract, and Analyze.</em>
+</p>
+<p align="center">
+	<img src="app/docs/showcase2.png" alt="Pipeline - Model Run & Steps" width="900" />
+	<br />
+	<em>Pipeline: 8 steps with Model Run metrics (tokens, latency, cost, retries).</em>
+</p>
+<p align="center">
+	<img src="app/docs/showcase3.png" alt="Analysis Results - Dashboard" width="900" />
+	<br />
+	<em>Results: Evidence-backed findings, clause table, and Export Report.</em>
+</p>
+
+<p align="center">
+	<img src="app/docs/showcase4.png" alt="Diff View - Suggested Redlines" width="900" />
+	<br />
+	<em>Diff View: Suggested redlines side-by-side with the original clause.</em>
+</p>
+
+<p align="center">
+	<img src="app/docs/showcase5.png" alt="Metrics & Export" width="900" />
+	<br />
+	<em>Metrics & Export: Model, tokens, latency, retries, and PDF export.</em>
+</p>
+
+---
+
+## User Flow (Home → Pipeline → Results)
+- Home: Choose contract type/persona/model and paste or upload a file.
+- Pipeline: Observability view of 8 steps and Model Run metrics.
+- Results: Risk dashboard with evidence quotes, clause table, and PDF export.
+
+```mermaid
+flowchart LR
+	A[Home] --> B[Pipeline]
+	B --> C[Results]
+	B -->|View structured output| C
+	C -->|Export Report| D[PDF]
+```
+
+---
+
+## How the LLM Is Used
+
+### API Call (OpenAI)
+```ts
+import { NextResponse } from 'next/server';
+import { openai } from '@ai-sdk/openai';
+import { generateObject } from 'ai';
+import { ContractAnalysisSchema } from '@/lib/contract-analyzer/schemas';
+
+export const runtime = 'nodejs';
+
+export async function POST(request: Request) {
+	const { contractText, modelId } = await request.json();
+	const system = 'Structured extraction + explainability';
+	const prompt = 'Analyze contract and return JSON matching schema';
+
+	const result = await generateObject({
+		model: openai(modelId),
+		schema: ContractAnalysisSchema,
+		system,
+		prompt,
+		temperature: 0.5,
+	});
+
+	return NextResponse.json({
+		analysis: result.object,
+		tokensUsed: {
+			input: result.usage?.promptTokens || 0,
+			output: result.usage?.completionTokens || 0,
+		},
+		modelUsed: modelId,
+	});
+}
+```
+
+### Prompt Strategy (excerpt)
+```ts
+export const productIntelligencePrompt = `
+You are an AI-powered Contract Risk Analyzer.
+
+Transform unstructured contract text into structured, explainable insights.
+- Extract risky clauses
+- Provide verbatim evidence quotes and locations
+- Explain, suggest negotiation, and score risk
+`;
+```
+
+### Schema Validation (Zod)
+```ts
+import { z } from 'zod';
+
+export const ClauseSchema = z.object({
+	title: z.string(),
+	risk_level: z.enum(['low','medium','high']),
+	evidence_quotes: z.array(z.object({ quote: z.string().min(15), location: z.string() })).min(1),
+	plain_english: z.string(),
+	negotiation_language: z.string(),
+});
+
+export const ContractAnalysisSchema = z.object({
+	overall_risk_score: z.number().min(0).max(100),
+	clauses: z.array(ClauseSchema).min(1),
+	missing_protections: z.array(z.string()).default([]),
+});
+```
+
+### Retries & Metrics
+- Bounded retries on validation failures; rate-limit handling.
+- Precise tokens via provider usage or tokenizer fallback (`@dqbd/tiktoken`).
+- Latency, retries, and estimated cost tracked per model.
+
 
 An AI-powered chatbot application designed to provide conversational assistance using modern web technologies and API-driven architecture. This project focuses on clean frontend integration, scalable backend communication, and practical AI usage patterns.
 
@@ -75,8 +200,20 @@ These screenshots highlight the core experience:
 	<em>Results: Evidence-backed findings, clause table, and Export Report.</em>
 </p>
 
+<p align="center">
+	<img src="app/docs/showcase4.png" alt="Diff View - Suggested Redlines" width="800" />
+	<br />
+	<em>Diff View: Suggested redlines side-by-side with the original clause.</em>
+</p>
+
+<p align="center">
+	<img src="app/docs/showcase5.png" alt="Metrics & Export" width="800" />
+	<br />
+	<em>Metrics & Export: Model, tokens, latency, retries, and PDF export.</em>
+</p>
+
 Notes:
-- Images live at `app/docs/showcase1.png`, `app/docs/showcase2.png`, and `app/docs/showcase3.png` in this repo for GitHub rendering.
+- Images live at `app/docs/showcase1.png` … `app/docs/showcase5.png` in this repo for GitHub rendering.
 
 ---
 
@@ -113,14 +250,19 @@ Notes:
 - npm or yarn
 - API key for the AI provider
 
-### Installation
+### Installation & Run
 ```bash
+# Clone
 git clone git@github.com:kiran-revally-unh/kiran-ai-chatbot.git
 cd kiran-ai-chatbot
+
+# Install
 npm install
 
-### Run (Dev)
-```bash
+# Env
+export OPENAI_API_KEY=your_key_here
+
+# Dev
 npm run dev
 # Open http://localhost:3000/contract-analyzer
 ```
@@ -133,3 +275,41 @@ npm run dev
 
 ### Safety Note
 This tool is educational and not legal advice. Use only sample or public contract text.
+
+---
+
+## Deploy (Vercel)
+
+You can deploy with either the Vercel CLI or via GitHub import.
+
+### Option A — CLI
+```bash
+# Install CLI
+npm i -g vercel
+
+# Login and initialize project
+vercel login
+vercel
+
+# Set env vars
+vercel env add OPENAI_API_KEY production
+vercel env add OPENAI_API_KEY preview
+vercel env add OPENAI_API_KEY development
+
+# Optional DB (if you enable Postgres)
+vercel env add POSTGRES_URL production
+
+# Deploy
+npm run deploy
+# On success, Vercel prints your live URL
+```
+
+### Option B — GitHub Import
+- Push this repo to GitHub
+- Import the repo in Vercel dashboard
+- Add OPENAI_API_KEY (and optional POSTGRES_URL) in Project Settings → Environment Variables
+- Click Deploy; Vercel shows the live URL
+
+Notes:
+- API routes require Node runtime, enforced in app/api/contract/analyze/route.ts.
+- Build script runs next build; DB migrations are not executed automatically on deploy.

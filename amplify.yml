@@ -5,11 +5,15 @@ frontend:
   phases:
     preBuild:
       commands:
+        - export NVM_DIR="$HOME/.nvm"
+        - '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"'
+        - nvm install 20
+        - nvm use 20
+        - node -v
         - corepack enable
         - corepack prepare pnpm@9.12.3 --activate
         - pnpm --version
-        - node -v
-        - pnpm install --prefer-frozen-lockfile
+        - pnpm install --prefer-frozen-lockfile || pnpm install
     build:
       commands:
         - pnpm run build

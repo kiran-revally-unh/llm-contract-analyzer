@@ -129,8 +129,9 @@ export default function ContractAnalyzerPage() {
       let textToUse = textParam;
       try {
         textToUse = decodeURIComponent(textParam);
-      } catch (error) {
-        console.error('Failed to decode text parameter, using as-is:', error);
+      } catch {
+        // If decoding fails, use the raw parameter value
+        textToUse = textParam;
       }
       // Prefill only; do NOT auto-run analysis. User must click Analyze.
       setContractText(textToUse);

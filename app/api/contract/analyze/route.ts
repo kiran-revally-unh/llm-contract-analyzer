@@ -53,12 +53,16 @@ ${contractText}
 
 ANALYSIS REQUIREMENTS:
 - Identify ALL risky, unfair, or unusual clauses
-- For EACH clause, provide evidence_quotes with:
-  * quote: Copy the EXACT text word-for-word from the contract above (minimum 15 words, maximum 200 words)
-  * location: Specify exactly where it appears (e.g., "Section 7, Limitation of Liability" or "Paragraph 3" or "Article 5.2")
-- Explain each risk in plain English
+- For EACH clause, provide:
+  * title: A clear, descriptive title for the clause (e.g., "Arbitration Agreement", "Non-Compete Restriction")
+  * plain_english: A simple explanation of what the clause means in everyday language
+  * evidence_quotes with:
+    - quote: Copy the EXACT text word-for-word from the contract above (minimum 15 words, maximum 200 words)
+    - location: Specify exactly where it appears (e.g., "Section 7, Limitation of Liability" or "Paragraph 3" or "Article 5.2")
+  * why_risky: Technical explanation of the legal risks
+- Explain each risk from the ${persona} perspective
 - Assess who benefits from each clause
-- Provide specific negotiation language
+- Provide specific negotiation language (pushback)
 - Suggest concrete revisions
 - Identify missing protections
 - Calculate overall risk score (0-100)

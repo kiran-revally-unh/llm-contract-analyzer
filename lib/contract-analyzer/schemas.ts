@@ -7,10 +7,12 @@ export const EvidenceQuoteSchema = z.object({
 
 export const ClauseSchema = z.object({
   id: z.string().min(1),
+  title: z.string().min(3),
   category: z.enum(['arbitration','liability','termination','ip','privacy','data_retention','payment','warranty','governing_law','assignment','non_compete','nda','other']).default('other'),
   risk: z.enum(['low','medium','high']),
   who_benefits: z.enum(['company','user','employee','neutral']).default('neutral'),
   why_risky: z.string().min(5),
+  plain_english: z.string().min(5),
   evidence_quotes: z.array(EvidenceQuoteSchema).min(1),
   pushback: z.string().min(5),
   suggested_revision: z.string().min(5),
